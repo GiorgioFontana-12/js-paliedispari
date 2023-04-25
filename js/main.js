@@ -1,3 +1,5 @@
+let pari_o_dispari = 0
+let numeroUtente = 0
 let x = prompt("inserisci parola palindroma")
 function reverseString(str) {
     var newString = "";
@@ -14,4 +16,16 @@ if (reverseX == x) {
 } else {
     alert ("non è palindroma")
     
+}
+
+alert ("Giochiamo a Pari O Dispari")
+while (pari_o_dispari != "pari" && pari_o_dispari != "dispari") {
+    pari_o_dispari = prompt("pari o dispari?")
+}
+// while (numeroUtente >= "1" && numeroUtente <= "5") {
+//     numeroUtente = prompt("Butta la mano! Inserisci un numero da 1 a 5")
+// } NON FUNZIONA...
+
+while (numeroUtente != "1" && numeroUtente != "2" && numeroUtente != "3" && numeroUtente != "4" && numeroUtente != "5" ) {
+    numeroUtente = prompt("Butta la mano! Inserisci un numero da 1 a 5")
 }
