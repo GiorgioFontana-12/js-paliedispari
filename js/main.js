@@ -29,3 +29,29 @@ while (pari_o_dispari != "pari" && pari_o_dispari != "dispari") {
 while (numeroUtente != "1" && numeroUtente != "2" && numeroUtente != "3" && numeroUtente != "4" && numeroUtente != "5" ) {
     numeroUtente = prompt("Butta la mano! Inserisci un numero da 1 a 5")
 }
+
+computerNumber = Math.floor(Math.random() * (6 - 1) + 1);
+
+numeroDaVerificare = Number(numeroUtente) + Number(computerNumber)
+numeroDaVerificare = numeroDaVerificare % 2
+if (pari_o_dispari == "pari") {
+    if (numeroDaVerificare = 0) {
+        alert ("hai vinto")
+        console.log ("hai vinto")
+    }else {
+        alert ("hai perso")
+        console.log ("hai perso")
+        
+    }
+
+}else if (pari_o_dispari == "dispari") {
+    if (numeroDaVerificare = 1) {
+        alert ("hai vinto")
+        console.log ("hai vinto")
+
+    }else {
+        alert ("hai perso")
+        console.log ("hai perso")
+
+    }
+}
